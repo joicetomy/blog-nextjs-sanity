@@ -43,7 +43,7 @@ export default defineConfig({
       locate,
       previewUrl: {
         draftMode: {
-          enable: DRAFT_MODE_ROUTE,
+          enable: 'https://regal-pasca-ce77ca.netlify.app/api/draft',
         },
       },
     }),
@@ -56,6 +56,6 @@ export default defineConfig({
     // Vision lets you query your content with GROQ in the studio
     // https://www.sanity.io/docs/the-vision-plugin
     process.env.NODE_ENV !== 'production' &&
-      visionTool({ defaultApiVersion: apiVersion }),
+    visionTool({ defaultApiVersion: apiVersion }),
   ],
 })
